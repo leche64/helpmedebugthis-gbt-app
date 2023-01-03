@@ -5,11 +5,11 @@ html {
 }
 
 .chat-box-left {
-  @apply bg-[#444654] shadow-lg max-w-sm lg:max-w-lg p-2 text-sm rounded-lg rounded-bl-none self-start text-left pl-3 lg:text-lg transition ease-in-out;
+  @apply bg-[#444654] shadow-lg max-w-sm lg:max-w-lg p-2 text-sm rounded-lg rounded-bl-none self-start text-left pl-3 lg:text-lg;
 }
 
 .chat-box-right {
-  @apply bg-[#395475] shadow-lg max-w-sm p-2 text-sm rounded-lg rounded-br-none self-end text-right pr-3 lg:text-lg transition ease-in-out;
+  @apply bg-[#395475] shadow-lg max-w-sm p-2 text-sm rounded-lg rounded-br-none self-end text-right pr-3 lg:text-lg;
 }
 
 @tailwind components;
