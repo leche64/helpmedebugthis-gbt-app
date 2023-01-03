@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
   const sectionRef = useRef(null);
@@ -18,9 +18,14 @@ export default function Home() {
     },
     {
       user: "gbt",
-      message: "Ask me anything! :)",
+      message: "Ask me anything!",
     },
   ]);
+
+  useEffect(() => {
+    console.log("bing bong");
+    scrollToBottom();
+  }, [chatLog]);
 
   function clearChat() {
     setChatLog([]);
@@ -51,7 +56,6 @@ export default function Home() {
       ...chatLogNew,
       { user: "gbt", message: `${data.message}` },
     ]);
-    scrollToBottom();
   }
   return (
     <>
@@ -181,9 +185,7 @@ export default function Home() {
               <div className="chat-box-right">BEEP BOOP</div>
               <div className="chat-box-right">BEEP BOOP</div> */}
               {/* <div className="h-10" ref={sectionRef}></div> */}
-              <br/>
-              <br/>
-              <br ref={sectionRef}/>
+              <br ref={sectionRef} />
             </div>
             <div className="chatInput max-w-md flex mt-5 mx-auto">
               <form className="w-full" onSubmit={handleSubmit}>
