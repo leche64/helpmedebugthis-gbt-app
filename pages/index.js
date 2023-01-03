@@ -14,40 +14,106 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="appBody bg-gray-200 sm:bg-yellow-200">
-        <div className="appHeader px-8 py-12 max-w-md mx-auto sm:max-w-xl">
-          <img
-            className="h-10 mx-auto sm:h-16"
-            src="/img/logo-black.svg"
-            alt="HelpMeDebugThisLog"
-          ></img>
-          <img
-            className="mt-5 mx-auto"
-            src="/img/robot.svg"
-            alt="HelpMeDebugThisLog"
-          ></img>
-          <h1 className="mt-2 text-2xl font-bold sm:text-4xl">
-            Talk to our <span className="text-green-700">A.I. chatbot</span>{" "}
-            <br /> A smart assistant always by your side{" "}
-          </h1>
-          <p className="mt-2 text-gray-600 sm:text-xl sm:mt-4">
-            HelpMeDebugThis is an A.I powered chatbot designed to answer any
-            question, anytime, anywhere. Chat with me today. Beep Boop.
-          </p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="mt-7 w-6 h-6 mx-auto"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-            />
-          </svg>
+
+      <div className="grid lg:grid-cols-5">
+        <div className="appPanelOneBody bg-gray-200 sm:bg-yellow-200 lg:col-span-2">
+          <div className="appPanelOneContainer px-8 py-12 max-w-md mx-auto sm:max-w-xl">
+            <img
+              className="h-14 mx-auto sm:h-16"
+              src="/img/logo-black.svg"
+              alt="HelpMeDebugThisLog"
+            ></img>
+            <img
+              className="mt-3 mx-auto"
+              src="/img/robot.svg"
+              alt="HelpMeDebugThisLog"
+            ></img>
+            <h1 className="mt-2 text-2xl font-bold sm:text-3xl">
+              Talk to our <span className="text-green-700">A.I. chatbot</span>{" "}
+              <br /> A smart assistant always by your side{" "}
+            </h1>
+            <p className="mt-2 text-gray-600 sm:text-xl sm:mt-4">
+              HelpMeDebugThis is an A.I powered chatbot designed to answer any
+              question, anytime, anywhere. Chat with me today. Beep Boop.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="mt-7 w-6 h-6 mx-auto"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </div>
+
+        {/* SECTION TWO START */}
+        <div className="appPanelTwoBody bg-indigo-200 lg:block text-neutral-50 pt-2 lg:col-span-3">
+          <div className="appPanelTwoContainer px-8 py-12 max-w-md mx-auto sm:max-w-xl border bg-[#343542] border-[#5F646C] rounded">
+            <div className="chatLog flex flex-col h-fill border-2 border-[#5F646C] space-y-2 p-2 rounded">
+              <div className="chat-box-left">GM!</div>
+              <div className="chat-box-left">Bing Bong</div>
+              <div className="chat-box-left">Hey I'm a robot BEEP BOOP</div>
+              <div className="chat-box-left">
+                I'm a robot and I can do whatever you waht, ask me something go
+                ahead, ask me ask me ask me
+              </div>
+              <div className="chat-box-right">
+                ullamcorper, sollicitudin leo vitae, egestas elit. Nulla
+                tristique sed lectus eu eleifend. Morbi facilisis nunc turpis,
+                vel iaculis justo viverra quis. Pellentesque feugiat velit sed
+                risus interdum, vel maximus purus gravida.
+              </div>
+              <div className="chat-box-right">
+                eros urna rhoncus risus, vitae ultricies nibh diam sit amet
+                tortor. Sed congue justo eget consectetur fermentum. Nam commodo
+                velit sed cursus blandit.
+              </div>
+              <div className="chat-box-left">
+                Fusce pretium nisl a luctus dapibus. Vivamus efficitur tellus ac
+                dolor tincidunt tempus. Vestibulum ante ipsum primis in faucibus
+                orci luctus et ultrices posuere cubilia curae; In vel justo
+                lectus. Vestibulum eget odio nisi. Curabitur ac mi sed ante
+                luctus dictum. Cras et auctor nisi, sit amet malesuada dolor.
+              </div>
+              <div className="chat-box-right">Bing Bong</div>
+              <div className="chat-box-right">Roll it up young bllllssss</div>
+              <div className="chat-box-left">
+                Fusce pretium nisl a luctus dapibus. Vivamus efficitur tellus ac
+                dolor tincidunt tempus. Vestibulum ante ipsum primis in faucibus
+                orci luctus et ultrices posuere cubilia curae;
+              </div>
+            </div>
+            <div className="chatInput max-w-md flex mt-5 mx-auto">
+              <input
+                className="h-10 w-full appearance-none rounded p-2 text-white bg-[#40414f] focus:outline-none focus:shadow-outline"
+                id="username"
+                type="text"
+                placeholder="Ask me a something"
+                autoComplete="off"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-9 h-9 ml-2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </>

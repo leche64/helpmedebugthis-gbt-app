@@ -1,3 +1,16 @@
 @tailwind base;
+
+html {
+  font-family: 'Poppins'; 
+}
+
+.chat-box-left {
+  @apply bg-[#444654] shadow-lg max-w-sm p-2 text-sm rounded-lg rounded-bl-none self-start text-left;
+}
+
+.chat-box-right {
+  @apply bg-[#395475] shadow-lg max-w-sm p-2 text-sm rounded-lg rounded-br-none self-end text-right;
+}
+
 @tailwind components;
 @tailwind utilities;
