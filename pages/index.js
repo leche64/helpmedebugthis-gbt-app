@@ -85,7 +85,7 @@ export default function Home() {
               <br /> A smart assistant always by your side{" "}
             </h1>
             <p className="mt-2 text-gray-600 sm:text-xl sm:mt-4">
-              HelpMeDebugThis is an A.I powered chatbot designed to answer any
+              <span className="font-semibold">HelpMeDebugThis</span> is an A.I powered chatbot designed to answer any
               question, anytime, anywhere. Chat with me today. Beep Boop.
             </p>
             <svg
